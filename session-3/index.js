@@ -11,4 +11,15 @@ a = 20;
 c = a + b;
 console.log(c)
 
+function sayHey() {
+    console.log("Hey!");
+}
+
+function conversation() {
+    sayHey();
+    console.log("How are you?");
+    console.log("Goodbye");
+}
+
+conversation();
 
