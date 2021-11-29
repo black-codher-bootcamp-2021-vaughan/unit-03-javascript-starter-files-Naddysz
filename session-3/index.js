@@ -46,8 +46,8 @@ function addTwoNumbers(x,y) {
 
 
  function futureAge(name,age) {
-    const answer = age + 5;
-    return "Hi " + name+"! You will be " + answer + " years old in 5 years";
+    const ageInFiveYears = age + 5;
+    return "Hi " + name+"! You will be " + ageInFiveYears + " years old in 5 years";
  }
 
  // Two  ways of excuting code
