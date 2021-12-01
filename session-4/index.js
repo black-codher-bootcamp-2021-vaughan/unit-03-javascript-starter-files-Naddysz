@@ -1,28 +1,28 @@
 // ****************************************************TASK 1 - OBJECTS****************************************************
 const personA = {
     name: "Yahya", 
-    age: "18",
+    age: 18,
     location: "Birmingham",
     likes: "manga",
 };
 
 const personB = { 
     name: "Musab",
-    age: "13",
+    age: 13,
     location: "Kenya",
     likes: "anatomy",
 };
 
 const personC = {
     name: "Nadia",
-    age: "9",
+    age: 9,
     location: "Kenya",
     likes: "skating",
 };
 
 const personD = {
     name: "Munir",
-    age: "11",
+    age: 11,
     location: "Kenya",
     likes: "youtube",
 };
@@ -35,6 +35,7 @@ console.log(biography(personA));
 console.log(biography(personB));
 console.log(biography(personC));
 console.log(biography(personD));
+
 
 
 // ****************************************************TASK 2 - MATHS OPERATORS****************************************************
@@ -71,14 +72,11 @@ console.log(biography(personD));
 
 // ****************************************************TASK 3****************************************************
 
+const ageToDrive = 17.9;
 
+const isPersonAbleToDrive = personA.age > ageToDrive;
 
-
-
-
-
-
-
+console.log("Is Yahya able to drive? " + isPersonAbleToDrive); 
 
 
 
