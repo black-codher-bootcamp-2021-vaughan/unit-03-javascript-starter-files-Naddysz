@@ -1,32 +1,29 @@
-//create function
-let getGrade = function(int score) { 
-    let grade = "";
-    if(score > 80 && score <= 90 ) { 
+//create function    
+    
+function getGrade(total) {
+    if(total > 80 && total <= 90 ) 
         grade = "A";
-    }
-    else if(score > 70 && score <= 80) {
-        grade = "B";
-    }
-    else if(score > 60 && score <= 70) {
-        grade = "C";
-    }
-    else if(score > 50 && score <= 60) {
-        grade = "D";
-    }
-    else if(score > 40 && score <= 50) {
-        grade = "E";
-    }
-    else if(score > 30 && score <= 40) {
-        grade = "F";
-    }
-    else(score < 30) {
-        grade = "Fail";
-    }
-    
-    return grade;
-    }
-    
 
+    if(total > 70 && total <= 80) 
+        grade = "B";
+    
+    if(total > 60 && total <= 70) 
+        grade = "C";
+    
+    if(total > 50 && total <= 60) 
+        grade = "D";
+    
+    if(total > 40 && total <= 50) 
+        grade = "E";
+    
+    if(total > 30 && total <= 40) 
+        grade = "F";
+    
+    if(total < 30) 
+        grade = "Fail";
+  
+        return grade;
+}
 
 //call function\
 
