@@ -1,30 +1,38 @@
 //create function    
     
 function getGrade(total) {
-    if(total > 80 && total <= 90 ) 
-        grade = "A";
+    switch(true) {
+    case total > 80 && total <= 90:
+        return "A";
+        break;
 
-    if(total > 70 && total <= 80) 
-        grade = "B";
+    case total > 70 && total <= 80:
+        return "B";
+        break;
+
+    case total > 60 && total <= 70: 
+        return "C";
+        break;
     
-    if(total > 60 && total <= 70) 
-        grade = "C";
+    case total > 50 && total <= 60:
+        return "D";
+        break;
     
-    if(total > 50 && total <= 60) 
-        grade = "D";
+    case total > 40 && total <= 50:
+        return "E";
+        break;
     
-    if(total > 40 && total <= 50) 
-        grade = "E";
+    case total > 30 && total <= 40:
+        return "F";
+        break;
     
-    if(total > 30 && total <= 40) 
-        grade = "F";
-    
-    if(total < 30) 
-        grade = "Fail";
-  
-        return grade;
+     default:
+        return "Fail";
+        break;
+    }
 }
 
 //call function\
 
 console.log(getGrade(65)); 
+console.log(getGrade(91)); 
